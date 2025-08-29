@@ -2,7 +2,7 @@ const VideoBackground = () => {
   return (
     <>
       <video
-        className="inset-0 w-full h-full object-cover pointer-events-none select-none"
+        className="absolute inset-0 w-full h-full object-cover pointer-events-none select-none"
         autoPlay
         loop
         muted

@@ -1,0 +1,1 @@
+export { pessoasService } from './pessoasService';
