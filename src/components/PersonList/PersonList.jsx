@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { pessoasService } from '../../services';
+import { pessoasService } from '../../services/pessoas/pessoasService';
 import PersonCard from '../PersonCard';
 import Pagination from '../Pagination/Pagination';
 import { AlertCircle, Users, Loader2 } from 'lucide-react';

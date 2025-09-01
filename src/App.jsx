@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import { pessoasService } from './services/pessoas/pessoasService';
 import './App.css';
 import HeroSection from './components/HeroSection/HeroSection';
 import Navbar from './components/Navbar/Navbar';
@@ -11,6 +12,10 @@ function App() {
   const handleSearch = (newFilters) => {
     setFilters(newFilters);
   };
+
+  useEffect(() => {
+    pessoasService.iniciarPreload();
+  }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
