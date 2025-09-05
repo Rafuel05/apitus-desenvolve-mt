@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { pessoasService } from '../../services/pessoas/pessoasService';
 import PersonCard from '../PersonCard';
 import Pagination from '../Pagination/Pagination';
 import { AlertCircle, Users, Loader2 } from 'lucide-react';
 
 const PersonList = ({ filters }) => {
+  const navigate = useNavigate();
   const [pessoas, setPessoas] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -44,7 +46,7 @@ const PersonList = ({ filters }) => {
   };
 
   const handlePersonClick = (pessoa) => {
-    console.log('Clicou na pessoa:', pessoa);
+    navigate(`/pessoa/${pessoa.id}`);
   };
 
   if (loading && pessoas.length === 0) {

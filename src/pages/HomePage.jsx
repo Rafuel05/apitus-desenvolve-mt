@@ -1,11 +1,10 @@
 import { useState, useEffect } from 'react';
-import { pessoasService } from './services/pessoas/pessoasService';
-import './App.css';
-import HeroSection from './components/HeroSection/HeroSection';
-import Navbar from './components/Navbar/Navbar';
-import PersonList from './components/PersonList/PersonList';
+import { pessoasService } from '../services/pessoas/pessoasService';
+import HeroSection from '../components/HeroSection/HeroSection';
+import Navbar from '../components/Navbar/Navbar';
+import PersonList from '../components/PersonList/PersonList';
 
-function App() {
+function HomePage() {
   const [filters, setFilters] = useState({});
   const [isLoading, setIsLoading] = useState(false);
 
@@ -31,4 +30,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
