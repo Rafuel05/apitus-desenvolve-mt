@@ -2,6 +2,9 @@ const BASE_URL = 'https://abitus-api.geia.vip/v1';
 
 // Classe base para requests
 class ApiService {
+  
+  static BASE_URL = BASE_URL;
+
   static async request(endpoint, options = {}) {
     try {
       const response = await fetch(`${BASE_URL}${endpoint}`, {
