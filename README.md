@@ -1,8 +1,5 @@
 # ABITUS: Sistema de Consulta de Pessoas Desaparecidas - MT
 
-<div align="center">
-  <img src="public/policia-fundo-transparente.png" alt="Logo Polícia Civil MT" width="120"/>
-  
   **Sistema web para consulta e envio de informações sobre pessoas desaparecidas em Mato Grosso**
   
   [![React](https://img.shields.io/badge/React-18.x-blue.svg)](https://reactjs.org/)
